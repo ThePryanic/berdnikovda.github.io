@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Формы</title>
+</head>
+<body class="forms">
+    <header class="header black">
+        <div class="container">
+            <div class="header__wrapper">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="../pages/Greece.html" class="menu__link">Греческая</a></li>
+                        <li><a href="../pages/Scandinavia.html" class="menu__link">Скандинавская</a></li>
+                        <li><a href="../pages/Egyptian.html" class="menu__link">Египетская</a></li>
+                        <li><a href="../pages/Forms.html" class="menu__main_link">Формы</a></li>
+                    </ul>
+                </nav>
+                <a href="../index.html" class="header__link-logo">
+                    <div class="header__logo">
+                        <img src="../images/logo.png" alt="logo" class="logo__img">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <h1>Какая мифология показалось Вам наиболее интресной?</h1>
+    <div class="form">
+        <form action="" method="get" class = "vote">
+            <div class = "radio">
+                <legend>Укажите жанр мифологии</legend>
+
+                <input type="radio" name="Greece">
+                <label>Греческая</label>
+
+                <input type="radio" name="scandinavia">
+                <label>Скандинавская</label>
+
+                <input type="radio" name="egyptian">
+                <label>Египетская</label>
+            </div>
+            <h2>Укажите Ваши данные</h2>
+            <div class="data">                
+                <label>Фамилия:</label><br>
+                <input type="text" name="last_name"/><br>
+
+                <label>Имя:</label><br>
+                <input type="text" name="name"/><br>
+
+                <label>Телефон:</label><br>
+                <input type="tel" name="phone" pattern="+[0-9]{1} ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"/><br>
+
+                <label>e-mail:</label><br>
+                <input type="email" name="email"/><br>
+
+                <label>Дата отправки:</label><br>
+                <input type="date" name="date"/><br>
+
+                <button type="submit" class = "button">Отправить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
