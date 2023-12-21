@@ -214,10 +214,10 @@ table th {
   border: 1px solid #bdbdbd;
   border-radius: 0.25rem;
 }
-.radio{
+.choise{
   display: block;
-	padding: 20px 60px;
-	background: #474747;
+  padding: 10px 10px;
+	background: #f1efef;
 	border: 2px solid rgba(255, 255, 255, 0.1);
 	border-radius: 8px;
 	font-size: 18px;
@@ -227,13 +227,25 @@ table th {
 	position: relative;
 }
 
-.button{
-  background-color: #366d38; /* Green */
-  border: none;
+.button {
+  color: #070707;
+  background-color: #19611d;
+  border: 1px solid #145219;
+  border-radius: 4px;
+  padding: 15px 18px 30px 15px;
+  cursor: pointer;
+  height:32px;
+  font-size:14px;
+  box-shadow: 0 0 4px #999;
+  background-position: center;
+  transition: 0.8s;
+  }
+  .button:hover {
+  background:#47f550 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
+  }
+  .button:active{
+  background-color:#292d3e;
+  background-size: 100%;
+  transition: 0s;
+  }
