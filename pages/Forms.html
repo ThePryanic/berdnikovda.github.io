@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../style/style.css">
+    
     <title>Формы</title>
 </head>
 <body class="forms">
@@ -27,18 +28,13 @@
     <h1>Какая мифология показалось Вам наиболее интресной?</h1>
     <div class="form">
         <form action="" method="get" class = "vote">
-            <div class = "radio">
-                <legend>Укажите жанр мифологии</legend>
-
-                <input type="radio" name="Greece">
-                <label>Греческая</label>
-
-                <input type="radio" name="scandinavia">
-                <label>Скандинавская</label>
-
-                <input type="radio" name="egyptian">
-                <label>Египетская</label>
-            </div>
+            <h2>Укажите жанр мифологии</h2>
+            <select class = "choise" required>
+                <option value="Greece"selected>Греческая</option>
+                <option value="scandinavia">Скандинавская</option>
+                <option value="egyptian">Египетская</option>
+                <option value="other">Другая</option>
+            </select>
             <h2>Укажите Ваши данные</h2>
             <div class="data">                
                 <label>Фамилия:</label><br>
