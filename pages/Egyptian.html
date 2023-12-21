@@ -29,8 +29,25 @@
             <div class="myths__wrap--title">
                 <h2>Боги древнего Египта</h2>
             </div>
+            <div id="formContainer"> 
+                <label for="nameInput"> 
+                    Имя: 
+                </label> 
+                <input type="text" 
+                       id="nameInput" 
+                       placeholder="Введите имя"> 
+                <label for="descriptionInput"> 
+                    Описание:  
+                </label>
+                <textarea id="descriptionInput"
+                          placeholder= "Добавить описание"> 
+                </textarea> 
+                <button class ="button"  onclick="addData()"> 
+                      Добавить 
+                  </button> 
+            </div> 
             <div>
-                <table border="1">
+                <table id = "table">
                     <tbody>
                       <tr>
                         <th>Имя</th>
@@ -63,5 +80,29 @@
             </div>
         </div>
     </section>
+    <script> 
+        function addData() { 
+
+            let name = document.getElementById("nameInput").value; 
+
+            let description = document.getElementById("descriptionInput").value; 
+            
+            let table = document.getElementById("table"); 
+            let newRow = table.insertRow(table.rows.length); 
+            
+            newRow.insertCell(0).innerHTML = name;
+            newRow.insertCell(1).innerHTML = " ";
+            newRow.insertCell(2).innerHTML = description;
+
+            clearInputs(); 
+        } 
+
+        function clearInputs() { 
+            
+            document.getElementById("nameInput").value = ""; 
+            document.getElementById("photo").value = "";
+            document.getElementById("descriptionInput").value = ""; 
+        } 
+    </script>
 </body>
 </html>
